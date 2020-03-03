@@ -468,7 +468,7 @@ filter (
 
   if (sample_ < 1)
     sample_ = 1;
-
+  // Random Sampling
   pcl::RandomSample<pcl::PointXYZRGBA> fbf;
   fbf.setInputCloud (cloud_in);
   fbf.setSeed (seed_);
